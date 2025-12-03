@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="app-header">
+    <h1>TODO</h1>
+</header>
+
+<main class="app">
+    <section class="top-bar">
+        <label for="search">Wyszukaj zadanie:</label>
+        <input id="search" type="search" placeholder="Wpisz frazę, np. projekt, zakupy…" />
+    </section>
+    <section class="todo-section">
+        <h2>Twoje zadania</h2>
+        <ul id="todo-list" class="todo-list">
+        </ul>
+
+        <div class="add-form">
+            <h3>Dodaj nowe zadanie</h3>
+            <div class="add-row">
+                <input id="new-task-text" type="text"
+                       placeholder="Opis zadania, np. 'Oddać LAB B'">
+                <input id="new-task-date" type="datetime-local">
+                <button id="add-task">Dodaj</button>
+            </div>
+            <p class="hint">
+                Opis: 3–255 znaków. Termin pusty albo w przyszłości.
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer class="app-footer">
+     LAB B
+</footer>
+
+<script src="todo.js" defer></script>
+</body>
+</html>
